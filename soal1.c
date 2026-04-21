@@ -70,7 +70,7 @@ int main(){
             res_idx++;
         } 
     }
-
+    result[res_idx] ='\0';
     
 
     int potong;
