@@ -56,19 +56,18 @@ int main(){
         {
             result[res_idx] = str[i];
             res_idx++;
-            printf("op1\n");
+
         }
         else if (str[i] == ')' && buka != 0){
             result[res_idx] = str[i];
             tutup ++;
             res_idx++;
-            printf("op2\n");
+
         }
         else if (str[i] == '('){
             result[res_idx] = str[i];
             buka++;
             res_idx++;
-            printf("op3\n");
         } 
     }
     result[res_idx] = '\0';
