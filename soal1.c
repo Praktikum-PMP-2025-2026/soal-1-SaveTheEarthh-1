@@ -43,7 +43,7 @@ int findIdxLast (char *str, char find){
 
 int main(){
     char str[50]; char result [50];
-    scanf("%s", str);
+    scanf("%[^\n]", str);
     
     int size = strlen(str);
     char *ptr = str;
@@ -70,7 +70,8 @@ int main(){
             res_idx++;
         } 
     }
-    result[res_idx] = '\0';
+
+    
 
     int potong;
     if (buka > tutup)
@@ -92,5 +93,6 @@ int main(){
         }
     }
     printf("%s", result);
+
     return 0;
 }
